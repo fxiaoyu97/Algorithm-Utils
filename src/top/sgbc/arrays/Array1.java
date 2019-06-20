@@ -106,7 +106,7 @@ public class Array1 {
             throw new IllegalArgumentException("add failed，index is illegal");
         }
         Integer ret = data[index];
-        for (int i = index; index < size-1; i++) {
+        for (int i = index; i < size-1; i++) {
             data[i] = data[i+1];
         }
         size--;
@@ -130,7 +130,7 @@ public class Array1 {
 
     @Override
     public String toString() {
-        return "Arrays{" +
+        return "Arrays{" +size+
                 ", data=" + java.util.Arrays.toString(data) +
                 '}';
     }
